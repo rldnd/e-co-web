@@ -1,10 +1,8 @@
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import reactLogo from "@/assets/react.svg";
 
 import viteLogo from "public/vite.svg";
-
-import styles from "./test.module.scss";
 
 function App() {
 	const [count, setCount] = useState(0);
