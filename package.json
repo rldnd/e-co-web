@@ -12,6 +12,7 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
+		"build:prod": "tsc && vite build --mode production",
 		"test": "vitest --run",
 		"test:watch": "vitest",
 		"eslint:fix": "eslint --fix --ext .ts,.tsx .",
@@ -23,6 +24,7 @@
 		"build-storybook": "storybook build"
 	},
 	"dependencies": {
+		"@sentry/react": "^7.113.0",
 		"eslint-plugin-jsx-a11y": "^6.8.0",
 		"eslint-plugin-react": "^7.34.1",
 		"react": "^18.3.1",
