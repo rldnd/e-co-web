@@ -12,10 +12,13 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
+		"test": "vitest --run",
+		"test:watch": "vitest",
 		"eslint:fix": "eslint --fix --ext .ts,.tsx .",
 		"prettier:fix": "prettier -w . --ignore-unknown --check --cache",
 		"preview": "vite preview",
-		"prepare": "husky"
+		"prepare": "husky",
+		"pre-push": "pnpm test"
 	},
 	"dependencies": {
 		"eslint-plugin-jsx-a11y": "^6.8.0",
@@ -44,6 +47,7 @@
 		"prettier": "3.2.5",
 		"typescript": "^5.4.5",
 		"vite": "^5.2.10",
-		"vite-tsconfig-paths": "^4.3.2"
+		"vite-tsconfig-paths": "^4.3.2",
+		"vitest": "^1.6.0"
 	}
 }
