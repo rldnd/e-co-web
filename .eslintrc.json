@@ -1,6 +1,9 @@
 {
 	"root": true,
-	"env": { "browser": true, "es2020": true },
+	"env": {
+		"browser": true,
+		"es2020": true
+	},
 	"extends": [
 		"eslint:recommended",
 		"plugin:@typescript-eslint/recommended-type-checked",
@@ -10,7 +13,8 @@
 		"plugin:jsx-a11y/recommended",
 		"plugin:react/recommended",
 		"plugin:react/jsx-runtime",
-		"prettier"
+		"prettier",
+		"plugin:storybook/recommended"
 	],
 	"parser": "@typescript-eslint/parser",
 	"plugins": [
@@ -28,7 +32,9 @@
 		"no-implicit-coercion": "error",
 		"react-refresh/only-export-components": [
 			"warn",
-			{ "allowConstantExport": true }
+			{
+				"allowConstantExport": true
+			}
 		],
 		"@typescript-eslint/ban-ts-comment": "error",
 		"@typescript-eslint/ban-types": "error",
